@@ -86,18 +86,120 @@ struct FactAlert: Identifiable {
   var id: String { self.title }
 }
 
+//@main
+//struct TCAApp: App {
+//
+//    static let store = Store(initialState: CounterFeature.State()){
+//        CounterFeature()._printChanges()
+//    }
+//
+//    static let s = Store(initialState: CounterFeature.State(), reducer: {CounterFeature()._printChanges()})
+//
+//  var body: some Scene {
+//    WindowGroup {
+//        CounterView(store: TCAApp.store)
+//    }
+//  }
+//}
+
+
+struct ContentView: View {
+    @State private var isDrawerOpen = false
+
+    var body: some View {
+        NavigationView {
+            GeometryReader { geometry in
+                HStack(spacing: 0) {
+                    if isDrawerOpen {
+                        DrawerView()
+                            .frame(width: min(geometry.size.width * 0.7, 300)) // Adjust the drawer width as needed
+                            .transition(.move(edge: .leading))
+                            .animation(.default)
+                    }
+
+                    VStack {
+                        NavigationLink(destination: HomeView()) {
+                            Text("Home")
+                        }
+                        .isDetailLink(false) // Prevent pushing a new view onto the navigation stack
+
+                        Spacer()
+
+                        Button("Open Drawer") {
+                            withAnimation {
+                                isDrawerOpen.toggle()
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+            }
+            .navigationBarTitle("App")
+        }
+    }
+}
+
+struct HomeView: View {
+    var body: some View {
+        Text("Home Page")
+            .navigationBarTitle("Home", displayMode: .inline)
+    }
+}
+
+// Dummy views for the other pages
+struct LoginView: View {
+    var body: some View {
+        Text("Login Page")
+            .navigationBarTitle("Login", displayMode: .inline)
+    }
+}
+
+struct RegisterView: View {
+    var body: some View {
+        Text("Register Page")
+            .navigationBarTitle("Register", displayMode: .inline)
+    }
+}
+
+struct AboutView: View {
+    var body: some View {
+        Text("About Page")
+            .navigationBarTitle("About", displayMode: .inline)
+    }
+}
+
+struct OptionsView: View {
+    var body: some View {
+        Text("Options Page")
+            .navigationBarTitle("Options", displayMode: .inline)
+    }
+}
+
+struct DrawerView: View {
+    var body: some View {
+        List {
+            NavigationLink(destination: LoginView()) {
+                Text("Login")
+            }
+            NavigationLink(destination: RegisterView()) {
+                Text("Register")
+            }
+            NavigationLink(destination: AboutView()) {
+                Text("About")
+            }
+            NavigationLink(destination: OptionsView()) {
+                Text("Options")
+            }
+        }
+        .listStyle(SidebarListStyle())
+    }
+}
+
 @main
-struct TCAApp: App {
-    
-    static let store = Store(initialState: CounterFeature.State()){
-        CounterFeature()._printChanges()
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
     }
-    
-    static let s = Store(initialState: CounterFeature.State(), reducer: {CounterFeature()._printChanges()})
-    
-  var body: some Scene {
-    WindowGroup {
-        CounterView(store: TCAApp.store)
-    }
-  }
 }
