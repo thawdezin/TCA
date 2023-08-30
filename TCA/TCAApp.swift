@@ -88,13 +88,16 @@ struct FactAlert: Identifiable {
 
 @main
 struct TCAApp: App {
+    
+    static let store = Store(initialState: CounterFeature.State()){
+        CounterFeature()._printChanges()
+    }
+    
+    static let s = Store(initialState: CounterFeature.State(), reducer: {CounterFeature()._printChanges()})
+    
   var body: some Scene {
     WindowGroup {
-      FeatureView(
-        store: Store(initialState: Feature.State()) {
-          Feature()
-        }
-      )
+        CounterView(store: TCAApp.store)
     }
   }
 }

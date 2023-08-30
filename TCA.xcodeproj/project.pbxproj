@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */; };
 		CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */; };
 		CBDEFE6E2A9CD4AA00E65212 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */; };
 		CBDEFE702A9CD4AB00E65212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDEFE6F2A9CD4AB00E65212 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		CBDEFE682A9CD4AA00E65212 /* TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAApp.swift; sourceTree = "<group>"; };
 		CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9F954BC2A9F0154005C3B0C /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
 		CBDEFE5F2A9CD4AA00E65212 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +65,7 @@
 		CBDEFE6A2A9CD4AA00E65212 /* TCA */ = {
 			isa = PBXGroup;
 			children = (
+				A9F954BC2A9F0154005C3B0C /* Counter */,
 				CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */,
 				CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */,
 				CBDEFE6F2A9CD4AB00E65212 /* Assets.xcassets */,
@@ -151,6 +162,7 @@
 				CBDEFE7D2A9CF2BA00E65212 /* Feature.swift in Sources */,
 				CBDEFE6E2A9CD4AA00E65212 /* ContentView.swift in Sources */,
 				CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */,
+				A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCA/Preview Content\"";
-				DEVELOPMENT_TEAM = 39R23H4HYP;
+				DEVELOPMENT_TEAM = 78DU6292NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCA/Preview Content\"";
-				DEVELOPMENT_TEAM = 39R23H4HYP;
+				DEVELOPMENT_TEAM = 78DU6292NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
