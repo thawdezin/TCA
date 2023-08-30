@@ -112,16 +112,31 @@ struct ContentView: View {
                 HStack(spacing: 0) {
                     if isDrawerOpen {
                         DrawerView()
-                            .frame(width: min(geometry.size.width * 0.7, 300)) // Adjust the drawer width as needed
+                            .frame(width: min(geometry.size.width * 0.7, 300))
                             .transition(.move(edge: .leading))
                             .animation(.default)
+                            .gesture(DragGesture().onEnded { gesture in
+                                if gesture.translation.width < -100 {
+                                    withAnimation {
+                                        isDrawerOpen = false
+                                    }
+                                }
+                            })
                     }
 
                     VStack {
                         NavigationLink(destination: HomeView()) {
                             Text("Home")
                         }
-                        .isDetailLink(false) // Prevent pushing a new view onto the navigation stack
+                        .isDetailLink(false)
+                        .contentShape(Rectangle()) // Make the NavigationLink area tappable
+                        .gesture(DragGesture().onChanged { _ in
+                            if isDrawerOpen {
+                                withAnimation {
+                                    isDrawerOpen = false
+                                }
+                            }
+                        })
 
                         Spacer()
 
@@ -132,12 +147,22 @@ struct ContentView: View {
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(Rectangle()) // Make the VStack area tappable
+                    .gesture(DragGesture().onChanged { _ in
+                        if isDrawerOpen {
+                            withAnimation {
+                                isDrawerOpen = false
+                            }
+                        }
+                    })
                 }
             }
             .navigationBarTitle("App")
         }
     }
 }
+
+
 
 struct HomeView: View {
     var body: some View {
