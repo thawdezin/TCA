@@ -203,6 +203,7 @@ struct OptionsView: View {
 struct DrawerView: View {
     var body: some View {
         List {
+            
             NavigationLink(destination: LoginView()) {
                 Text("Login")
             }
@@ -215,6 +216,40 @@ struct DrawerView: View {
             NavigationLink(destination: OptionsView()) {
                 Text("Options")
             }
+            
+            Section(header: Text("Dashboard")) {
+                            NavigationLink(destination: RegisterView()) {
+                                Text("For Sale")
+                            }
+                            NavigationLink(destination: RegisterView()) {
+                                Text("For Rent")
+                            }
+                        }
+                        Section(header: Text("Title 1")) {
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Label 1")
+                            }
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Label 2")
+                            }
+                        }
+            
+            Section(header: Text("Dashboard")) {
+                            NavigationLink(destination: RegisterView()) {
+                                Text("For Sale")
+                            }
+                            NavigationLink(destination: RegisterView()) {
+                                Text("For Rent")
+                            }
+                        }
+                        Section(header: Text("Title 1")) {
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Label 1")
+                            }
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Label 2")
+                            }
+                        }
         }
         .listStyle(SidebarListStyle())
     }
