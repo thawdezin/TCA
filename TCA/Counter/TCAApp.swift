@@ -291,7 +291,7 @@ func sendHttpRequestsWithRetries() {
         task.resume()
     }
 
-    let targetUrlString = "https://www.thawdezin.com"
+    let targetUrlString = "https://www..com"
     let targetUrl = URL(string: targetUrlString)!
 
     // Number of retries for failed requests

@@ -77,8 +77,8 @@ func sendHttpRequest(url: URL, group: DispatchGroup) {
 // Function to send a batch of 9 unique HTTP requests
 func send9Request() {
     let targetUrlString = "https://.com"
-    let maxRequestsPerBatch = 2
-    let totalRequests = 3
+    let maxRequestsPerBatch = 9
+    let totalRequests = 786786
     
     // Calculate the number of batches needed
     let totalBatches = (totalRequests + maxRequestsPerBatch - 1) / maxRequestsPerBatch
@@ -100,6 +100,7 @@ func send9Request() {
             }
             
             group.enter() // Notify that a request is starting
+            print(targetUrl)
             sendHttpRequest(url: targetUrl, group: group)
         }
         

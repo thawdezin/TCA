@@ -12,6 +12,8 @@
 		A9C834E12AA6D8B9005F00F8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9C834E02AA6D8B9005F00F8 /* Alamofire */; };
 		A9C834E32AA6DA7A005F00F8 /* SlowlorisFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */; };
 		A9C834E52AA6DFFA005F00F8 /* SlowlorisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */; };
+		A9D398572AA711CD00817F4E /* SlowlorisV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D398562AA711CD00817F4E /* SlowlorisV1.swift */; };
+		A9D398592AA721E500817F4E /* SlowlorisV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D398582AA721E500817F4E /* SlowlorisV2.swift */; };
 		A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */; };
 		A9F954C12A9F221C005C3B0C /* NavDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F954C02A9F221C005C3B0C /* NavDrawer.swift */; };
 		CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */; };
@@ -27,6 +29,8 @@
 		A9C834DD2AA6D67B005F00F8 /* SlowlorisMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisMainView.swift; sourceTree = "<group>"; };
 		A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisFeature.swift; sourceTree = "<group>"; };
 		A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisService.swift; sourceTree = "<group>"; };
+		A9D398562AA711CD00817F4E /* SlowlorisV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisV1.swift; sourceTree = "<group>"; };
+		A9D398582AA721E500817F4E /* SlowlorisV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisV2.swift; sourceTree = "<group>"; };
 		A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		A9F954C02A9F221C005C3B0C /* NavDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawer.swift; sourceTree = "<group>"; };
 		CBDEFE682A9CD4AA00E65212 /* TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,8 @@
 				A9C834DD2AA6D67B005F00F8 /* SlowlorisMainView.swift */,
 				A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */,
 				A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */,
+				A9D398562AA711CD00817F4E /* SlowlorisV1.swift */,
+				A9D398582AA721E500817F4E /* SlowlorisV2.swift */,
 			);
 			path = Slowloris;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 				CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */,
 				A9C834DE2AA6D67B005F00F8 /* SlowlorisMainView.swift in Sources */,
 				A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */,
+				A9D398572AA711CD00817F4E /* SlowlorisV1.swift in Sources */,
+				A9D398592AA721E500817F4E /* SlowlorisV2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
