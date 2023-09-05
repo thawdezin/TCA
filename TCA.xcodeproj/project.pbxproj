@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9C834DB2AA6D5FB005F00F8 /* SlowlorisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834DA2AA6D5FB005F00F8 /* SlowlorisApp.swift */; };
+		A9C834DE2AA6D67B005F00F8 /* SlowlorisMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834DD2AA6D67B005F00F8 /* SlowlorisMainView.swift */; };
+		A9C834E12AA6D8B9005F00F8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9C834E02AA6D8B9005F00F8 /* Alamofire */; };
+		A9C834E32AA6DA7A005F00F8 /* SlowlorisFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */; };
+		A9C834E52AA6DFFA005F00F8 /* SlowlorisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */; };
 		A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */; };
+		A9F954C12A9F221C005C3B0C /* NavDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F954C02A9F221C005C3B0C /* NavDrawer.swift */; };
 		CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */; };
 		CBDEFE6E2A9CD4AA00E65212 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */; };
 		CBDEFE702A9CD4AB00E65212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDEFE6F2A9CD4AB00E65212 /* Assets.xcassets */; };
@@ -17,7 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9C834DA2AA6D5FB005F00F8 /* SlowlorisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisApp.swift; sourceTree = "<group>"; };
+		A9C834DD2AA6D67B005F00F8 /* SlowlorisMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisMainView.swift; sourceTree = "<group>"; };
+		A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisFeature.swift; sourceTree = "<group>"; };
+		A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowlorisService.swift; sourceTree = "<group>"; };
 		A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		A9F954C02A9F221C005C3B0C /* NavDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawer.swift; sourceTree = "<group>"; };
 		CBDEFE682A9CD4AA00E65212 /* TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAApp.swift; sourceTree = "<group>"; };
 		CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,18 +43,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDEFE7B2A9CDF4D00E65212 /* ComposableArchitecture in Frameworks */,
+				A9C834E12AA6D8B9005F00F8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9C834D92AA6D541005F00F8 /* Slowloris */ = {
+			isa = PBXGroup;
+			children = (
+				A9C834DA2AA6D5FB005F00F8 /* SlowlorisApp.swift */,
+				A9C834DD2AA6D67B005F00F8 /* SlowlorisMainView.swift */,
+				A9C834E22AA6DA7A005F00F8 /* SlowlorisFeature.swift */,
+				A9C834E42AA6DFFA005F00F8 /* SlowlorisService.swift */,
+			);
+			path = Slowloris;
+			sourceTree = "<group>";
+		};
 		A9F954BC2A9F0154005C3B0C /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */,
+				CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */,
+				CBDEFE7C2A9CF2BA00E65212 /* Feature.swift */,
 				A9F954BD2A9F0168005C3B0C /* CounterFeature.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		A9F954BF2A9F220C005C3B0C /* drawer */ = {
+			isa = PBXGroup;
+			children = (
+				A9F954C02A9F221C005C3B0C /* NavDrawer.swift */,
+			);
+			path = drawer;
 			sourceTree = "<group>";
 		};
 		CBDEFE5F2A9CD4AA00E65212 = {
@@ -65,12 +99,11 @@
 		CBDEFE6A2A9CD4AA00E65212 /* TCA */ = {
 			isa = PBXGroup;
 			children = (
+				A9C834D92AA6D541005F00F8 /* Slowloris */,
+				A9F954BF2A9F220C005C3B0C /* drawer */,
 				A9F954BC2A9F0154005C3B0C /* Counter */,
-				CBDEFE6B2A9CD4AA00E65212 /* TCAApp.swift */,
-				CBDEFE6D2A9CD4AA00E65212 /* ContentView.swift */,
 				CBDEFE6F2A9CD4AB00E65212 /* Assets.xcassets */,
 				CBDEFE712A9CD4AB00E65212 /* Preview Content */,
-				CBDEFE7C2A9CF2BA00E65212 /* Feature.swift */,
 			);
 			path = TCA;
 			sourceTree = "<group>";
@@ -101,6 +134,7 @@
 			name = TCA;
 			packageProductDependencies = (
 				CBDEFE7A2A9CDF4D00E65212 /* ComposableArchitecture */,
+				A9C834E02AA6D8B9005F00F8 /* Alamofire */,
 			);
 			productName = TCA;
 			productReference = CBDEFE682A9CD4AA00E65212 /* TCA.app */;
@@ -132,6 +166,7 @@
 			mainGroup = CBDEFE5F2A9CD4AA00E65212;
 			packageReferences = (
 				CBDEFE792A9CDF4D00E65212 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				A9C834DF2AA6D8B9005F00F8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = CBDEFE692A9CD4AA00E65212 /* Products */;
 			projectDirPath = "";
@@ -159,9 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F954C12A9F221C005C3B0C /* NavDrawer.swift in Sources */,
 				CBDEFE7D2A9CF2BA00E65212 /* Feature.swift in Sources */,
+				A9C834DB2AA6D5FB005F00F8 /* SlowlorisApp.swift in Sources */,
+				A9C834E32AA6DA7A005F00F8 /* SlowlorisFeature.swift in Sources */,
+				A9C834E52AA6DFFA005F00F8 /* SlowlorisService.swift in Sources */,
 				CBDEFE6E2A9CD4AA00E65212 /* ContentView.swift in Sources */,
 				CBDEFE6C2A9CD4AA00E65212 /* TCAApp.swift in Sources */,
+				A9C834DE2AA6D67B005F00F8 /* SlowlorisMainView.swift in Sources */,
 				A9F954BE2A9F0168005C3B0C /* CounterFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +369,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +407,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A9C834DF2AA6D8B9005F00F8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		CBDEFE792A9CDF4D00E65212 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
@@ -376,6 +426,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A9C834E02AA6D8B9005F00F8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C834DF2AA6D8B9005F00F8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		CBDEFE7A2A9CDF4D00E65212 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CBDEFE792A9CDF4D00E65212 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
